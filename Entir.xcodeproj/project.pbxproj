@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		E19CAA732387F031000B87E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19CAA722387F031000B87E6 /* Assets.xcassets */; };
 		E19CAA762387F031000B87E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19CAA752387F031000B87E6 /* Preview Assets.xcassets */; };
 		E19CAA792387F031000B87E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19CAA772387F031000B87E6 /* LaunchScreen.storyboard */; };
+		E19CAA812387F0C6000B87E6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19CAA802387F0C6000B87E6 /* MainController.swift */; };
+		E19CAA842387F8C3000B87E6 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = E19CAA832387F8C3000B87E6 /* LBTATools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		E19CAA752387F031000B87E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E19CAA782387F031000B87E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E19CAA7A2387F031000B87E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19CAA802387F0C6000B87E6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19CAA842387F8C3000B87E6 /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				E19CAA772387F031000B87E6 /* LaunchScreen.storyboard */,
 				E19CAA7A2387F031000B87E6 /* Info.plist */,
 				E19CAA742387F031000B87E6 /* Preview Content */,
+				E19CAA802387F0C6000B87E6 /* MainController.swift */,
 			);
 			path = Entir;
 			sourceTree = "<group>";
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = Entir;
+			packageProductDependencies = (
+				E19CAA832387F8C3000B87E6 /* LBTATools */,
+			);
 			productName = Entir;
 			productReference = E19CAA692387F02C000B87E6 /* Entir.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,9 @@
 				Base,
 			);
 			mainGroup = E19CAA602387F02C000B87E6;
+			packageReferences = (
+				E19CAA822387F8C3000B87E6 /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = E19CAA6A2387F02C000B87E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19CAA812387F0C6000B87E6 /* MainController.swift in Sources */,
 				E19CAA6D2387F02C000B87E6 /* AppDelegate.swift in Sources */,
 				E19CAA6F2387F02C000B87E6 /* SceneDelegate.swift in Sources */,
 				E19CAA712387F02C000B87E6 /* ContentView.swift in Sources */,
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E19CAA822387F8C3000B87E6 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E19CAA832387F8C3000B87E6 /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19CAA822387F8C3000B87E6 /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E19CAA612387F02C000B87E6 /* Project object */;
 }
